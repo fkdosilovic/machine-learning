@@ -16,6 +16,7 @@ for machine learning, primarily on unsupervised learning
 4. [Flow-based Deep Generative Models - Lil'Log](https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html)
 5. [From Autoencoder to Beta-VAE - - Lil'Log](https://lilianweng.github.io/lil-log/2018/08/12/from-autoencoder-to-beta-vae.html)
 6. [From GAN to WGAN - Lil'Log](https://lilianweng.github.io/lil-log/2017/08/20/from-GAN-to-WGAN.html)
+7. [Restricted Boltzmann Machines and Deep Belief Nets - MLSS 2010.](http://videolectures.net/mlss2010au_frean_deepbeliefnets/)
 
 ## Information theory
 
