@@ -7,6 +7,7 @@ for machine learning, primarily on unsupervised learning
 ## Deep learning
 
 1. Neural networks (Hugo Larochelle) - [Website](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) | [Lectures](https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH)
+2. Deep Learning Decal (UC Berkeley, Fall 2017.) - [Lectures](https://www.youtube.com/playlist?list=PLzWRmD0Vi2KXcrTVBSK2w-VyjAAfNaqgF)
 
 ## Generative modeling
 
@@ -21,3 +22,8 @@ for machine learning, primarily on unsupervised learning
 ## Information theory
 
 1. Information Theory, Inference, and Learning Algorithms - [Book](http://www.inference.org.uk/mackay/itila/book.html) | [Lectures](https://www.youtube.com/playlist?list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6)
+
+## Machine learning
+
+1. Machine Learning Decal (UC Berkeley, Spring 2018.) - [Lectures](https://www.youtube.com/playlist?list=PLzWRmD0Vi2KX35PhQBXLhN5a_7tZCFzuP)
+2. [Machine Learning at Berkeley Reading List](https://ml.berkeley.edu/reading-list)
