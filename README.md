@@ -27,3 +27,6 @@ for machine learning, primarily on unsupervised learning
 
 1. Machine Learning Decal (UC Berkeley, Spring 2018.) - [Lectures](https://www.youtube.com/playlist?list=PLzWRmD0Vi2KX35PhQBXLhN5a_7tZCFzuP)
 2. [Machine Learning at Berkeley Reading List](https://ml.berkeley.edu/reading-list)
+3. [Unsupervised Learning (René Vidal, Hopkins)](https://www.youtube.com/playlist?list=PLFInMJnvb3owAddRh4qk2gCX25kGLDay-)
+4. Foundations of Unsupervised Deep Learning (Ruslan Salakhutdinov, CMU) - [Lecture](https://www.youtube.com/watch?v=rK6bchqeaN8&ab_channel=LexFridman) | [Slides](http://www.cs.cmu.edu/~rsalakhu/talk_MLSS_part2.pdf)
+5. Unsupervised Deep Learning - Google DeepMind & Facebook Artificial Intelligence NeurIPS 2018 - [Lecture](https://www.youtube.com/watch?v=rjZCjosEFpI&ab_channel=TheArtificialIntelligenceChannel) | [Slides](https://ranzato.github.io/publications/tutorial_deep_unsup_learning_part1_NeurIPS2018.pdf)
