@@ -4,6 +4,9 @@ This repository contains code, examples and various resorces
 for machine learning, primarily on unsupervised learning
 (+ some information theory).
 
+This code generally follows a [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) project
+structure.
+
 ## Deep learning
 
 1. Neural networks (Hugo Larochelle) - [Website](http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html) | [Lectures](https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH)
