@@ -4,8 +4,8 @@ This repository contains code, examples and various resorces
 for machine learning, primarily on unsupervised learning
 (+ some information theory).
 
-This code generally follows a [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) project
-structure.
+This code generally follows a [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
+project structure.
 
 ## Deep learning
 
@@ -33,3 +33,10 @@ structure.
 3. [Unsupervised Learning (René Vidal, Hopkins)](https://www.youtube.com/playlist?list=PLFInMJnvb3owAddRh4qk2gCX25kGLDay-)
 4. Foundations of Unsupervised Deep Learning (Ruslan Salakhutdinov, CMU) - [Lecture](https://www.youtube.com/watch?v=rK6bchqeaN8&ab_channel=LexFridman) | [Slides](http://www.cs.cmu.edu/~rsalakhu/talk_MLSS_part2.pdf)
 5. Unsupervised Deep Learning - Google DeepMind & Facebook Artificial Intelligence NeurIPS 2018 - [Lecture](https://www.youtube.com/watch?v=rjZCjosEFpI&ab_channel=TheArtificialIntelligenceChannel) | [Slides](https://ranzato.github.io/publications/tutorial_deep_unsup_learning_part1_NeurIPS2018.pdf)
+
+## SciPy
+
+1. [Array Programming with NumPy](https://arxiv.org/abs/2006.10256)
+2. [The NumPy array: a structure for efficient numerical computation](https://arxiv.org/abs/1102.1523)
+3. [From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/)
+4. [Pandas from the Inside](https://www.youtube.com/watch?v=YGk09nK_xnM&ab_channel=PyData)
