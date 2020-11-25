@@ -40,3 +40,5 @@ project structure.
 2. [The NumPy array: a structure for efficient numerical computation](https://arxiv.org/abs/1102.1523)
 3. [From Python to Numpy](https://www.labri.fr/perso/nrougier/from-python-to-numpy/)
 4. [Pandas from the Inside](https://www.youtube.com/watch?v=YGk09nK_xnM&ab_channel=PyData)
+5. [Anatomy of Matplotlib (Beginner Level) | SciPy 2018 Tutorial | Benjamin Root & Hannah Aizenman](https://www.youtube.com/watch?v=6gdNUDs6QPc&ab_channel=Enthought)
+6. Matplotlib tutorial | Nicolas P. Rougier - [Talk](https://www.youtube.com/watch?v=p7Mj-4kASmI&ab_channel=Enthought) | [GitHub](https://github.com/rougier/matplotlib-tutorial)
