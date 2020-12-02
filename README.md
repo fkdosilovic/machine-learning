@@ -33,6 +33,7 @@ project structure.
 3. [Unsupervised Learning (René Vidal, Hopkins)](https://www.youtube.com/playlist?list=PLFInMJnvb3owAddRh4qk2gCX25kGLDay-)
 4. Foundations of Unsupervised Deep Learning (Ruslan Salakhutdinov, CMU) - [Lecture](https://www.youtube.com/watch?v=rK6bchqeaN8&ab_channel=LexFridman) | [Slides](http://www.cs.cmu.edu/~rsalakhu/talk_MLSS_part2.pdf)
 5. Unsupervised Deep Learning - Google DeepMind & Facebook Artificial Intelligence NeurIPS 2018 - [Lecture](https://www.youtube.com/watch?v=rjZCjosEFpI&ab_channel=TheArtificialIntelligenceChannel) | [Slides](https://ranzato.github.io/publications/tutorial_deep_unsup_learning_part1_NeurIPS2018.pdf)
+6. [Unsupervised Learning](http://videolectures.net/ssll09_schuurmans_unle/) by Dale Schuurmans
 
 ## SciPy
 
