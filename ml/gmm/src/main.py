@@ -50,11 +50,21 @@ class GaussianMixtureModel:
             # Update a posterior probabilities.
             self.pi = Nks / np.sum(Nks)
 
-        print(self.covs)
+
+def configure_axes(X, axes):
+    delta = 1.5
+    x1_min, x1_max = np.min(X[:, 0]), np.max(X[:, 0])
+    x2_min, x2_max = np.min(X[:, 1]), np.max(X[:, 1])
+
+    for ax in axes:
+        ax.set_xlim((x1_min - delta, x1_max + delta))
+        ax.set_ylim((x2_min - delta, x2_max + delta))
 
 
 if __name__ == "__main__":
-    # np.random.seed(1337)
+    np.random.seed(42)  # 13337, 42, 2020, 2021, 10 ** 9 + 7
+
+    # Tricky seeds - 1003
 
     # Sample the data.
     X, y = data.sample_gauss_2d(C=2, N=100)
@@ -65,11 +75,14 @@ if __name__ == "__main__":
     fig, axes = plt.subplots(nrows=1, ncols=2)
     axes = axes.flatten()
 
+    # Prepare axes.
+    configure_axes(X, axes)
+
     # Plot the initial distributions.
     for mean, cov in zip(gmm.means, gmm.covs):
         data.plot_gaussian_2d(mean, cov, axes[0])
 
-    gmm.fit(X.copy())
+    gmm.fit(X)
 
     # Plot the sampled data.
     data.plot_data(X, y, ax=axes[0])
