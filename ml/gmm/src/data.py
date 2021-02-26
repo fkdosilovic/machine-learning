@@ -46,7 +46,7 @@ def sample_gauss_2d(C: int, N: int):
 def plot_gaussian_2d(mean, cov, ax=None):
     """Plot 2D Gaussian distribution contour lines."""
 
-    std_lvl = np.diag(6 * cov)
+    std_lvl = 3 * np.sqrt(np.diag(cov))
 
     lower_bound = mean - std_lvl
     upper_bound = mean + std_lvl
