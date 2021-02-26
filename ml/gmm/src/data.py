@@ -7,19 +7,19 @@ class Random2DGaussian:
     MIN_X1, MIN_X2 = -5, -5
     MAX_X1, MAX_X2 = 5, 5
 
-    def __init__(self, mu: np.ndarray = None, sigma: np.ndarray = None):
+    def __init__(self, mean: np.ndarray = None, cov: np.ndarray = None):
         random_sample = np.random.random_sample
 
-        self.mu = mu
-        self.sigma = sigma
+        self.mean = cov
+        self.cov = cov
 
-        if mu is None:
-            self.mu = random_sample(size=(2,))
+        if self.mean is None:
+            self.mean = random_sample(size=(2,))
 
-            self.mu[0] = self.MIN_X1 + (self.MAX_X1 - self.MIN_X1) * self.mu[0]
-            self.mu[1] = self.MIN_X2 + (self.MAX_X2 - self.MIN_X2) * self.mu[1]
+            self.mean[0] = self.MIN_X1 + (self.MAX_X1 - self.MIN_X1) * self.mean[0]
+            self.mean[1] = self.MIN_X2 + (self.MAX_X2 - self.MIN_X2) * self.mean[1]
 
-        if sigma is None:
+        if self.cov is None:
             eigvalx1 = (random_sample() * (self.MAX_X1 - self.MIN_X1) / 5) ** 2
             eigvalx2 = (random_sample() * (self.MAX_X2 - self.MIN_X2) / 5) ** 2
             D = np.diag([eigvalx1, eigvalx2])
@@ -27,9 +27,11 @@ class Random2DGaussian:
             phi = random_sample() * 2 * np.pi
             R = np.array([[np.cos(phi), -np.sin(phi)], [np.sin(phi), np.cos(phi)],])
 
-            self.sigma = R.T @ D @ R
+            self.cov = R.T @ D @ R
 
-        self.get_sample = lambda n: np.random.multivariate_normal(mu, sigma, n)
+        self.get_sample = lambda n: np.random.multivariate_normal(
+            self.mean, self.cov, n
+        )
 
 
 def sample_gauss_2d(C: int, N: int):
@@ -59,6 +61,33 @@ def plot_gaussian_2d(mean, cov, ax=None):
 
     ax = ax if ax is not None else plt
     ax.contour(X, Y, rv.pdf(pos), linewidths=1)
+
+
+def plot_data(X, y, y_pred=None, ax=None):
+    """Plot the data in a feature space.
+
+    Plots the data in a feature space. Correctly classified data is plotted as
+    circles, while incorrectly classified data is plotted as x's.
+    """
+    colors = np.array(["b", "g", "r", "c", "m", "y", "k"])
+    color = np.array([colors[label] for label in y])
+
+    if y_pred == None:
+        y_pred = y
+
+    correct = y == y_pred
+    incorrect = y != y_pred
+
+    if ax is None:
+        ax = plt
+
+    ax.scatter(
+        X[correct, 0], X[correct, 1], s=10, c=color[correct], marker="o",
+    )
+
+    ax.scatter(
+        X[incorrect, 0], X[incorrect, 1], s=10, c=color[incorrect], marker="x",
+    )
 
 
 if __name__ == "__main__":
