@@ -44,10 +44,13 @@ def sample_gauss_2d(C: int, N: int):
 def plot_gaussian_2d(mean, cov, ax=None):
     """Plot 2D Gaussian distribution contour lines."""
 
-    std_lvl5 = np.diag(6 * cov)
+    std_lvl = np.diag(6 * cov)
 
-    x1 = np.linspace(mean[0] - std_lvl5[0], mean[0] + std_lvl5[0], num=200)
-    x2 = np.linspace(mean[1] - std_lvl5[1], mean[1] + std_lvl5[1], num=200)
+    lower_bound = mean - std_lvl
+    upper_bound = mean + std_lvl
+
+    x1 = np.linspace(lower_bound[0], upper_bound[0], num=200)
+    x2 = np.linspace(lower_bound[1], upper_bound[1], num=200)
 
     X, Y = np.meshgrid(x1, x2)
     pos = np.dstack((X, Y))
